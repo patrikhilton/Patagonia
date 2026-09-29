@@ -1,0 +1,157 @@
+/* =========================================================
+   PATAGONIA – MOBILE FIRST
+   Values marked FIGMA are guesses: click the element in
+   Figma and copy the real value from the right panel.
+   ========================================================= */
+
+/* ---------- Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;  /* FIGMA: check the font */
+  color: #1a1a1a;                             /* FIGMA */
+  background: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- Centered content (cheat sheet #4 + #5) ---------- */
+.container {
+  max-width: 1200px;   /* FIGMA: content width on desktop */
+  margin: 0 auto;      /* centers the content */
+  padding: 0 24px;     /* keeps content off the screen edges */
+}
+
+/* =========================================================
+   MOBILE (default styles)
+   ========================================================= */
+
+/* ---------- Header ---------- */
+.header-inner {
+  display: flex;
+  justify-content: space-between;   /* logo left, menu right */
+  align-items: center;
+  min-height: 70px;                 /* FIGMA */
+}
+
+.logo {
+  font-size: 22px;                  /* FIGMA */
+  font-weight: 700;                 /* bold on mobile and tablet */
+}
+
+/* The ••• icon: visible on mobile */
+.menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;                  /* cheat sheet #15: easy to tap */
+  min-height: 42px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* The links: hidden on mobile */
+.nav-list {
+  display: none;
+  list-style: none;
+  gap: 16px;                        /* FIGMA: space between links */
+}
+
+.nav-list a {
+  display: flex;
+  align-items: center;
+  min-height: 42px;                 /* cheat sheet #15 */
+  font-size: 12px;                  /* FIGMA */
+}
+
+/* ---------- Hero ---------- */
+.hero-inner {
+  display: flex;
+  flex-direction: column;           /* title, text, image stacked */
+  align-items: center;              /* everything centered */
+  text-align: center;
+  padding-top: 48px;                /* FIGMA */
+  padding-bottom: 48px;             /* FIGMA */
+}
+
+h1 {
+  font-size: 44px;                  /* FIGMA */
+  font-weight: 500;                 /* FIGMA */
+  margin-bottom: 24px;              /* FIGMA */
+}
+
+.hero-text {
+  font-size: 14px;                  /* FIGMA */
+  line-height: 1.6;
+  max-width: 480px;                 /* keeps lines short and readable */
+  margin-bottom: 48px;              /* FIGMA */
+}
+
+/* ---------- Image (cheat sheet #21) ---------- */
+picture {
+  display: block;                   /* picture is inline by default */
+  width: 100%;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;                     /* each export already has the right shape */
+}
+
+/* =========================================================
+   TABLET (min-width = small to big, cheat sheet #11)
+   FIGMA: use your tablet frame width
+   ========================================================= */
+@media screen and (min-width: 768px) {
+
+  /* Swap: hide the icon, show the links */
+  .menu-button {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .container {
+    padding: 0 56px;                /* FIGMA */
+  }
+
+  h1 {
+    font-size: 64px;                /* FIGMA */
+  }
+
+  .hero-text {
+    font-size: 16px;                /* FIGMA */
+  }
+}
+
+/* =========================================================
+   DESKTOP
+   FIGMA: breakpoint where desktop layout starts
+   ========================================================= */
+@media screen and (min-width: 1024px) {
+
+  .logo {
+    font-weight: 400;               /* regular on desktop */
+  }
+
+  h1 {
+    font-size: 80px;                /* FIGMA */
+  }
+
+  .hero-text {
+    max-width: 600px;               /* text fits on two lines */
+  }
+}
