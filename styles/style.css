@@ -1,0 +1,106 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;   
+  margin: 0 auto;      
+  padding: 0 30px;     
+}
+
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  min-height: 58px;                
+}
+
+.logo {
+font-family: "Baloo 2", Arial, sans-serif;
+font-size: 24px;          
+font-weight: 500;          
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  min-height: 42px;
+  padding: 0;
+  margin-right: -9px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-button img {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+.header-inner nav {
+  display: none;
+}
+
+.nav-list {
+  display: none;
+  list-style: none;
+  gap: 16px;                        
+}
+
+.nav-list a {
+  display: flex;
+  align-items: center;
+  min-height: 42px;               
+  font-size: 12px;                  
+}
+
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;         
+  align-items: center;              
+  text-align: center;
+  padding-top: 53px;               
+  padding-bottom: 0            
+}
+
+h1 {
+  font-family: "Poppins";
+    font-size: 36px;                  
+  font-weight: 500;                 
+  margin-bottom: 27px;              
+}
+
+.hero-text {
+  font-family: "Source Sans 3", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  max-width: 480px;                 
+  margin-bottom: 57px;              
+}
+
+
+picture {
+  display: block;                  
+  width: 100%;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;                   
+}
+

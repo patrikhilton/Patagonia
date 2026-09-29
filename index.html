@@ -5,8 +5,8 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Patagonia</title>
-  <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&family=Poppins:wght@500&family=Source+Sans+3:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -14,8 +14,9 @@
     <div class="container header-inner">
       <a href="#" class="logo">Head.</a>
 
-      <button class="menu-button" aria-label="Open menu">•••</button>
-
+      <button class="menu-button" aria-label="Open menu">
+  <img src="images/menu-icon.png" alt="">
+</button>
     <nav>
         <ul class="nav-list">
           <li><a href="#">Works</a></li>
@@ -36,8 +37,8 @@
       </p>
 
       <picture>
-  <source media="(max-width: )" srcset="images/patagonia-mobile.png">
-  <source media="(max-width: )" srcset="images/patagonia-tablet.jpg">
+  <source media="(max-width: 767px)" srcset="images/patagonia-mobile.png">
+  <source media="(max-width: 1023px)" srcset="images/patagonia-tablet.png">
   <img
     class="hero-image"
     src="images/patagonia-desktop.png"
