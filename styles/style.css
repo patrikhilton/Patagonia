@@ -104,3 +104,58 @@ picture {
   height: auto;                   
 }
 
+
+@media screen and (min-width: 768px) {
+
+  
+  .menu-button {
+    display: none;
+  }
+
+  .header-inner nav {
+    display: block;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 30px;             
+  }
+
+  .nav-list a {
+    font-size: 16px;       
+  }
+
+  
+  .container {
+    padding: 0 75px;        
+  }
+
+  
+  .header-inner {
+    min-height: 36px;      
+  }
+
+  
+  .logo {
+    font-size: 24px;        
+  }
+
+  
+  .hero-inner {
+    padding-top: 228px;   
+  }
+
+  
+  h1 {
+    font-size: 72px;        
+    margin-bottom: 22px;    
+  }
+
+  
+  .hero-text {
+    font-size: 22px;        
+    line-height: 33px;      
+    max-width: 573px;       
+    margin-bottom: 45px;    
+  }
+}
