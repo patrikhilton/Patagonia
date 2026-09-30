@@ -61,10 +61,11 @@ font-weight: 500;
 }
 
 .nav-list a {
+font-family: "Source Sans 3", Arial, sans-serif;
   display: flex;
   align-items: center;
   min-height: 42px;               
-  font-size: 12px;                  
+  font-size: 16px;                  
 }
 
 
@@ -74,7 +75,7 @@ font-weight: 500;
   align-items: center;              
   text-align: center;
   padding-top: 53px;               
-  padding-bottom: 0            
+  padding-bottom: 0;            
 }
 
 h1 {
@@ -162,3 +163,55 @@ picture {
     margin-bottom: 45px;    
   }
 }
+
+
+@media screen and (min-width: 1024px) {
+
+  
+  .container {
+    padding: 0 62px;        
+    max-width: 1440px;     
+  }
+
+  
+  .header-inner {
+    min-height: 165px;    
+  }
+
+    .logo {
+    font-family: "Aldrich", Arial, sans-serif;
+    font-weight: 400;
+  }
+
+  }
+
+
+  .nav-list {
+    gap: 28px;            
+  }
+
+    .nav-list a {
+    font-family: "Source Sans 3", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+
+  
+  .hero-inner {
+    padding-top: 143px;   
+  }
+
+  
+  h1 {
+  font-family: Poppins;
+    font-size: 90px;       
+    margin-bottom: 30px;   
+  }
+
+  
+  .hero-text {
+    font-size: 22px;       
+    line-height: 33px;   
+    max-width: 573,5px;       
+    margin-bottom: 47px;   
+  }
